@@ -1,0 +1,25 @@
+INSERT INTO role (id, description, details) VALUES (1, 'ADMIN', 'ADMIN');
+INSERT INTO role (id, description, details) VALUES (2, 'USER', 'USER');
+INSERT INTO role (id, description, details) VALUES (3, 'HR', 'HR');
+INSERT INTO role (id, description, details) VALUES (4, 'PURCHASE', 'PURCHASE');
+INSERT INTO role (id, description, details) VALUES (5, 'ACCOUNTING', 'ACCOUNTING');
+INSERT INTO role (id, description, details) VALUES (6, 'SHAREHOLDER', 'SHAREHOLDER');
+INSERT INTO role (id, description, details) VALUES (7, 'QA', 'QA');
+INSERT INTO role (id, description, details) VALUES (8, 'QC', 'QC');
+INSERT INTO role (id, description, details) VALUES (9, 'ENGINEERING', 'ENGINEERING');
+INSERT INTO role (id, description, details) VALUES (10, 'PRODUCTION', 'PRODUCTION');
+INSERT INTO role (id, description, details) VALUES (11, 'WAREHOUSE', 'WAREHOUSE');
+INSERT INTO role (id, description, details) VALUES (12, 'CANTEEN', 'CANTEEN');
+
+insert into user (Id,firstname,lastname,username,password) values(1,'ADMIN','ADMIN','ADMIN','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(2,'USER','USER','USER','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(3,'HR','HR','HR','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(4,'PURCHASE','PURCHASE','PURCHASE','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(5,'ACCOUNTING','ACCOUNTING','ACCOUNTING','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(6,'SHAREHOLDER','SHAREHOLDER','SHAREHOLDER','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(7,'QA','QA','QA','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(8,'QC','QC','QC','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(9,'ENGINEERING','ENGINEERING','ENGINEERING','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(10,'PRODUCTION','PRODUCTION','PRODUCTION','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(11,'WAREHOUSE','WAREHOUSE','WAREHOUSE','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
+insert into user (Id,firstname,lastname,username,password) values(12,'CANTEEN','CANTEEN','CANTEEN','$2a$10$I66N174.tFXN28Y1KQ1Oye7T.Pxh.xCM6G9hv0aiAq4CdNSTsr4zC');
