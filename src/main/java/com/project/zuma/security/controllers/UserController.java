@@ -37,8 +37,7 @@ public class UserController {
     }
 
     @PostMapping("/users/addNew")
-    public RedirectView addNew(User user, RedirectAttributes redir) {
-        userService.save(user);
+    public RedirectView addNew(User user, RedirectAttributes redir) {userService.save(user);
 
         RedirectView redirectView = new RedirectView("/login", true);
         redir.addFlashAttribute("message", "You have successfully registered a new user!");

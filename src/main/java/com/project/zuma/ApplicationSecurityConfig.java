@@ -30,7 +30,9 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/login", "/resources/**", "/css/**", "/fonts/**", "/img/**").permitAll()
                 .antMatchers("/register", "/resources/**", "/css/**", "/fonts/**", "/img/**", "/js/**").permitAll()
                 .antMatchers("/users/addNew").permitAll()
-                .antMatchers("/security/user/Edit/**").hasAuthority("ADMIN")
+//                .antMatchers("/security/user/Edit/**").hasAuthority("ADMIN")
+                .antMatchers("/security/**").hasAuthority("ADMIN")
+                .antMatchers("/hr/**").hasAnyAuthority("ADMIN","USER")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -42,8 +44,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/login").permitAll()
                 .and()
-                .exceptionHandling().accessDeniedPage("/accessDenied")
-        ;
+                .exceptionHandling().accessDeniedPage("/accessDenied");
     }
 
     @Autowired
@@ -52,9 +53,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-
         provider.setUserDetailsService(userDetailsService);
-
         provider.setPasswordEncoder(bCryptPasswordEncoder());
         return provider;
     }

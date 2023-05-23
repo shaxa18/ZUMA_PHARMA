@@ -21,19 +21,9 @@ public class ApplicationController {
         return "/hr/index";
     }
 
-    @GetMapping("/accounts")
-    public String accounts() {
-        return "/accounts/index";
-    }
-
     @GetMapping("/fleet")
     public String fleet() {
         return "/fleet/index";
-    }
-
-    @GetMapping("/helpdesk")
-    public String helpdesk() {
-        return "/helpdesk/index";
     }
 
     @GetMapping("/parameters")
@@ -41,14 +31,51 @@ public class ApplicationController {
         return "/parameters/index";
     }
 
-    @GetMapping("/payroll")
-    public String payroll() {
-        return "/payroll/index";
-    }
-
     @GetMapping("/security")
     public String security() {
         return "/security/index";
     }
+
+    @GetMapping("/accounting")
+    public String accounting() {
+        return "/accounting/index";
+    }
+
+    @GetMapping("/canteen")
+    public String canteen() {
+        return "/canteen/index";
+    }
+
+    @GetMapping("/engineering")
+    public String engineering() {
+        return "/engineering/index";
+    }
+
+    @GetMapping("/production")
+    public String production() {
+        return "/production/index";
+    }
+
+    @GetMapping("/purchase")
+    public String purchase() {
+        return "/purchase/index";
+    }
+
+    @GetMapping("/qa")
+    public String qa() {
+        return "/qa/index";
+    }
+
+    @GetMapping("/qc")
+    public String qc() {
+        return "/qc/index";
+    }
+
+    @GetMapping("/warehouse")
+    public String warehouse() {
+        return "/warehouse/index";
+    }
+
+
 
 }
