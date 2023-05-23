@@ -46,8 +46,8 @@
                                     <a id="display" th:href="@{'/security/user/Edit/'+${user.id}}"
                                        class="btn btn-primary"><i class="icon_pencil-edit"></i>Manage Roles</a>
                                     <a class="btn btn-success"><i class="icon_document_alt"></i></a>
-                                    <a class="btn btn-danger" onclick="return confirm('Are you sure you want delete?')"
-                                       th:href="@{'/security/user/delete/'+${user.id}}">
+                                    <a class="btn btn-danger" onclick="return confirm('Are you sure ?')"
+                                       th:href="@{'/security/users/delete/'+${user.id}}">
                                         <i class="icon_close_alt2"></i></a>
                                 </div>
                             </td>

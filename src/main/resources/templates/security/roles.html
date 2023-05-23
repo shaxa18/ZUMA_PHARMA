@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="_layout">
+      layout:decorate="_layout" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <body>
 
@@ -57,6 +57,9 @@
                                     <a id="display" th:href="@{'/security/role/'+${role.id}}"
                                        class="btn btn-primary"><i class="icon_pencil-edit"></i>
                                     </a>
+                                    <a class="btn btn-danger" onclick="return confirm('Are you sure ?')"
+                                       th:href="@{'/security/role/delete/'+${role.id}}">
+                                        <i class="icon_close_alt2"></i></a>
                                 </div>
                             </td>
                         </tr>
